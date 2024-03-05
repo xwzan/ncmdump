@@ -3,6 +3,9 @@ env:
   BUILD_TYPE: Release
   BUILD_PATH: build
 on:
+  repository_dispatch:
+  workflow_dispatch:
+
   push:
     branches: [ main ]
 
